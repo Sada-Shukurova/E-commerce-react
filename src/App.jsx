@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import Nav from "./comp/Nav";
+import Nav from "./components/Nav";
 
 function App() {
   return (
