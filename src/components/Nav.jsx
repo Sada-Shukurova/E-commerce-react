@@ -7,9 +7,11 @@ import { CiUser } from "react-icons/ci";
 // auth login
 import { useAuth0 } from "@auth0/auth0-react";
 
-// style
-import "./nav.css";
+// routing
 import Routing from "../Routing";
+
+// style
+import "./nav.module.scss";
 
 const Nav = () => {
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();

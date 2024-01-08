@@ -8,24 +8,25 @@
 
 .header {
   width: 100%;
+  /* MID HEADER */
+  /* LAST HEADER */
 }
-/* TOP HEADER */
 .header .top_header {
   max-width: 100%;
   display: flex;
   padding: 10px;
   background-color: #f6f7f8;
+  /* TOP HEADER */
 }
-.top_header .icon {
+.header .top_header .icon {
   margin-left: 20px;
   color: #ababab;
   font-size: 10px;
 }
-.top_header .info p {
+.header .top_header .info p {
   margin-left: 10px;
   color: #8a8a8a;
 }
-/* MID HEADER */
 .header .mid_header {
   display: flex;
   justify-content: space-between;
@@ -34,9 +35,9 @@
 }
 .header .mid_header .logo img {
   cursor: pointer;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 .header .mid_header .search_box input {
   padding: 10px;
   outline: none;
@@ -47,7 +48,6 @@
   border: none;
   background: #f6f7f8;
 }
-
 .header .mid_header .search_box button {
   padding: 10px;
   border-top-right-radius: 5px;
@@ -62,28 +62,24 @@
   transition: 0.5s all ease-in-out;
   font-weight: 600;
 }
-
-.header .mid_header .search_box button:hover {
+.header .mid_header .search_box buttonhover {
   background: #fed700;
   color: #cd1e76;
 }
-
-.mid_header .user {
+.header .mid_header .user {
   display: flex;
   margin-right: 30px;
 }
-.mid_header .user .icon {
+.header .mid_header .user .icon {
   margin-right: 10px;
 }
-
-.mid_header .user .icon button {
+.header .mid_header .user .icon button {
   border: none;
   outline: none;
   font-size: 16px;
   background: none;
   cursor: pointer;
 }
-/* LAST HEADER */
 .header .last_header {
   width: 100%;
   padding: 10px;
@@ -109,4 +105,4 @@
 .header .last_header .user_profile .info p {
   color: #ababab;
   font-size: 14px;
-}
+}/*# sourceMappingURL=nav.module.css.map */
