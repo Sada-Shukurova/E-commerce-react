@@ -8,7 +8,7 @@ import { CiUser } from "react-icons/ci";
 import { useAuth0 } from "@auth0/auth0-react";
 
 // routing
-import Routing from "../Routing";
+import Routing from "../../Routing";
 
 // style
 import "./nav.module.scss";
@@ -31,7 +31,7 @@ const Nav = () => {
           <img src="image/logo.webp" alt="logo" />
         </div>
         <div className="search_box">
-          <input type="text" value="" placeholder="search..." />
+          <input type="text" placeholder="search..." />
           <button>
             <AiOutlineSearch />
           </button>
