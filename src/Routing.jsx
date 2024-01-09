@@ -7,7 +7,9 @@ const Routing = () => {
       {myRoutes.map(({ id, to, text }) => {
         return (
           <li key={id}>
-            <NavLink to={to}>{text}</NavLink>
+            <NavLink className="link" to={to}>
+              {text}
+            </NavLink>
           </li>
         );
       })}
