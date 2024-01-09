@@ -1,0 +1,143 @@
+// variables
+
+$yellow: #fed700;
+$pink: #cd1e76;
+$light: #f6f7f8;
+
+//
+
+.header {
+  width: 100%;
+  .top_header {
+    max-width: 100%;
+    display: flex;
+    padding: 10px;
+    background-color: $light;
+    /* TOP HEADER */
+    .icon {
+      margin-left: 20px;
+      color: #ababab;
+      font-size: 10px;
+    }
+    .info {
+      p {
+        margin-left: 10px;
+        color: #8a8a8a;
+      }
+    }
+  }
+  /* MID HEADER */
+  .mid_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    max-width: 100%;
+    .logo {
+      img {
+        cursor: pointer;
+        object-fit: cover;
+      }
+    }
+    .search_box {
+      input {
+        padding: 10px;
+        outline: none;
+        background: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 250px;
+        border: none;
+        background: $light;
+      }
+      button {
+        padding: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 1px solid $pink;
+        outline: none;
+        width: 50px;
+        background: $pink;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 30px;
+        transition: 0.5s all ease-in-out;
+        font-weight: 600;
+        &:hover {
+          background: $yellow;
+          color: $pink;
+        }
+      }
+    }
+    .user {
+      display: flex;
+      margin-right: 30px;
+      .icon {
+        margin-right: 10px;
+        button {
+          border: none;
+          outline: none;
+          font-size: 16px;
+          background: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  /* LAST HEADER */
+  .last_header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #232323;
+    justify-content: space-between;
+    .user_profile {
+      display: flex;
+      .icon {
+        padding: 10px;
+        background: #fff;
+        border-radius: 10px;
+      }
+      .info {
+        margin-left: 10px;
+        h2 {
+          color: #fff;
+          font-size: 18px;
+        }
+        p {
+          color: #ababab;
+          font-size: 14px;
+        }
+      }
+    }
+    .nav {
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          .link {
+            margin-right: 20px;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.5s all ease-in-out;
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+    .offer {
+      margin-right: 20px;
+      padding: 10px 20px;
+      background: $yellow;
+      border-radius: 10px;
+      p {
+        text-transform: uppercase;
+        color: #232323;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+}
