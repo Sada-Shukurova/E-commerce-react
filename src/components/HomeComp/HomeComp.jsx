@@ -1,5 +1,9 @@
-import { Link } from "react-router-dom";
+// style
 import "./home.module.scss";
+// icons
+import { FaEye, FaHeart } from "react-icons/fa";
+//
+import { Link } from "react-router-dom";
 import HomeProduct from "../HomeProduct";
 import { useState } from "react";
 
@@ -40,7 +44,15 @@ const HomeComp = () => {
                     <>
                       <div className="box">
                         <div className="img_box">
-                          <img src={image} alt="" />
+                          <img src={image} alt="product" />
+                          <div className="icon">
+                            <div className="icon_box">
+                              <FaEye />
+                            </div>
+                            <div className="icon_box">
+                              <FaHeart />
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </>
